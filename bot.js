@@ -456,6 +456,20 @@ h.user.setAvatar(`https://cdn.discordapp.com/avatars/324672376455299074/52431200
 
 
 //============================================
+client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
+if (message.content === '!spam10') {
+      let count = 0;
+      let ecount = 0;
+      for(let x = 0; x < 90000; x++) {
+        message.channel.send(`**Credit Spam , Frame - ez Farm - كردت اسبام اسبام اسبام اوف ءف اح اح نار ج **[ " ${x} " ]`)
+          .then(m => {
+            count++;
+          })
+          
+        }
+      }
+});
+
 var timer = setTimeout(timerFunc, 1000);
 
 var timer = setTimeout(timerFunce, 1000);
